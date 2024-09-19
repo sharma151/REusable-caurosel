@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reusable Carousel</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Carousel 1 -->
+    <div class="container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="https://picsum.photos/id/606/1000/500" alt="Image 1">
+                <img src="https://picsum.photos/id/607/1000/500" alt="Image 2">
+                <img src="https://picsum.photos/id/608/1000/500" alt="Image 3">
+                <img src="https://picsum.photos/id/609/1000/500" alt="Image 4">
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <div class="indicators">
+                <span class="active" data-slide="0"></span>
+                <span data-slide="1"></span>
+                <span data-slide="2"></span>
+                <span data-slide="3"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel 2 (reusable) -->
+    <div class="container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="https://picsum.photos/id/406/1000/500" alt="Slide 1">
+                <img src="https://picsum.photos/id/407/1000/500" alt="Slide 2">
+                <img src="https://picsum.photos/id/408/1000/500" alt="Slide 3">
+                <img src="https://picsum.photos/id/409/1000/500" alt="Slide 4">
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <div class="indicators">
+                <span class="active" data-slide="0"></span>
+                <span data-slide="1"></span>
+                <span data-slide="2"></span>
+                <span data-slide="3"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy";
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 70%;
+  border: 2px solid black;
+  margin: auto;
+  padding: 40px;
+}
+.carousel {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid rgb(23, 116, 197);
+  border-radius: 10px;
+}
+
+/* Carousel Images */
+.carousel-images {
+  display: flex;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Navigation Buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.next:hover {
+  background-color: white;
+  color: grey;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Indicator Dots */
+/* Indicator Dots */
+.indicators {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  z-index: 10;
+}
+
+.indicators span {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Active Indicator - Changes color when active */
+.indicators .active {
+  background-color: white;
+  /* Change color when active */
+}

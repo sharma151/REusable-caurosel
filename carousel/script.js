@@ -33,10 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
 
-    carousel.querySelector(".prev-btn").addEventListener("click", prevSlide);
-    carousel.querySelector(".next-btn").addEventListener("click", nextSlide);
-    showSlide();
-
     dots.forEach((dot, dotIndex) => {
       dot.addEventListener("click", () => {
         index = dotIndex;
@@ -44,5 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
         indicators();
       });
     });
+
+    carousel.querySelector(".prev-btn").addEventListener("click", prevSlide);
+    carousel.querySelector(".next-btn").addEventListener("click", nextSlide);
+    showSlide();
   });
 });
