@@ -51,8 +51,9 @@ body {
   border-radius: 10px;
 }
 
+.prev:hover,
 .next:hover {
-  background-color: white;
+  background-color: rgb(241, 232, 232);
   color: grey;
 }
 
