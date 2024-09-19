@@ -12,33 +12,32 @@ document.querySelectorAll(".carousel").forEach(function (carousel) {
     // Ensure the index loops correctly
     currentIndex = (index + totalSlides) % totalSlides;
 
-    // Move the image container (slide effect)
     imagesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
 
     // Update indicator dots
     indicators.forEach((indicator, i) => {
       if (i === currentIndex) {
-        indicator.classList.add("active"); // Add 'active' class to current indicator
+        indicator.classList.add("active");
       } else {
-        indicator.classList.remove("active"); // Remove 'active' class from others
+        indicator.classList.remove("active");
       }
     });
   }
 
   // Event Listener for Previous Button
   prevButton.addEventListener("click", () => {
-    updateCarousel(currentIndex - 1); // Move to previous slide
+    updateCarousel(currentIndex - 1);
   });
 
   // Event Listener for Next Button
   nextButton.addEventListener("click", () => {
-    updateCarousel(currentIndex + 1); // Move to next slide
+    updateCarousel(currentIndex + 1);
   });
 
   // Event Listener for Indicators
   indicators.forEach((indicator, index) => {
     indicator.addEventListener("click", () => {
-      updateCarousel(index); // Move to the selected slide
+      updateCarousel(index);
     });
   });
 });
